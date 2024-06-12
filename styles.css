@@ -1,0 +1,369 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #e8e8e8;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.icon{
+  width: 4vh;
+}
+
+.position {
+  background-color: white;
+  height: 6vh;
+  margin-top: 15px;
+  border-radius: 15vh;
+  text-align: center;
+}
+
+.container {
+  position: relative;
+  bottom: 3px;
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.intro{
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+  font-size: 8vh;
+  font-family: "Danfo", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "ELSH" 0;
+  color: rgb(0, 0, 0);
+  -webkit-text-stroke: 2px white;
+}
+
+.cardPos {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card1 {
+  overflow-y: hidden;
+  width: 90%;
+  height: 70%;
+  border-radius: 30px;
+  background: #ffffff;
+  box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #c5c5c5;
+}
+
+.backColor{
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 70%;
+  border-radius: 50%;
+  background-color: #ceb9f1;
+}
+
+.socials{
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: fit-content;
+  height: fit-content;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 25px;
+  gap: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+}
+
+/* for all social containers*/
+.socialContainer {
+  width: 52px;
+  height: 52px;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: 0.3s;
+}
+/* instagram*/
+.containerOne:hover {
+  background-color: #d62976;
+  transition-duration: 0.3s;
+}
+/* twitter*/
+.containerTwo:hover {
+  background-color: #00acee;
+  transition-duration: 0.3s;
+}
+/* linkdin*/
+.containerThree:hover {
+  background-color: #0072b1;
+  transition-duration: 0.3s;
+}
+/* Whatsapp*/
+.containerFour:hover {
+  background-color: #128c7e;
+  transition-duration: 0.3s;
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: 0.3s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+.gmail{
+  width: 40%;
+}
+
+.github{
+  width: 50%
+}
+
+.active{
+  font-weight: bold;
+  color: rgb(255, 98, 124);
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.contactsContainer{
+  display: none;
+  position: absolute;
+  left: 53%;
+  bottom: 0;
+  transform: translateX(-53%);
+  padding-bottom: 10px;
+}
+
+.card2 svg {
+  height: 25px;
+}
+
+.card2 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e7e7e7;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  overflow: hidden;
+  height: 40px;
+  width: 190px;
+}
+
+.card2::before, .card2::after {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  transition: 0.25s linear;
+  z-index: 1;
+}
+
+.card2::before {
+  content: "";
+  left: 0;
+  justify-content: flex-end;
+  background-color: #4d60b6;
+}
+
+.card2::after {
+  content: "";
+  right: 0;
+  justify-content: flex-start;
+  background-color: #4453a6;
+}
+
+.card2:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.card2:hover span {
+  opacity: 0;
+  z-index: -3;
+}
+
+.card2:hover::before {
+  opacity: 0.5;
+  transform: translateY(-100%);
+}
+
+.card2:hover::after {
+  opacity: 0.5;
+  transform: translateY(100%);
+}
+
+.card2 span {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: whitesmoke;
+  font-family: 'Fira Mono', monospace;
+  font-size: 24px;
+  font-weight: 700;
+  opacity: 1;
+  transition: opacity 0.25s;
+  z-index: 2;
+}
+
+.card2 .social-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  height: 100%;
+  color: whitesmoke;
+  font-size: 24px;
+  text-decoration: none;
+  transition: 0.25s;
+}
+
+.card2 .social-link svg {
+  text-shadow: 1px 1px rgba(31, 74, 121, 0.7);
+  transform: scale(1);
+}
+
+.card2 .social-link:hover {
+  background-color: rgba(249, 244, 255, 0.774);
+  animation: bounce_613 0.4s linear;
+}
+
+@keyframes bounce_613 {
+  40% {
+    transform: scale(1.4);
+  }
+
+  60% {
+    transform: scale(0.8);
+  }
+
+  80% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media screen and (min-width: 500px){
+  .card1{
+    height: 90%;
+  }
+}
+
+@media screen and (min-width: 800px){
+  .backColor{
+    height: 100%;
+    width: 70vh;
+  }
+  .container{
+    font-size: 2vh;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) and (max-width: 850px) {
+  .container div:hover{
+    color: rgb(255, 98, 124);
+  }
+  .position{
+    width: 60%;
+  }
+  .headPos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer{
+    display: none;
+  }
+
+  .contactsContainer{
+    display: inline;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) and (min-width: 851px) {
+  .container div:hover{
+    color: rgb(255, 98, 124);
+  }
+  .position{
+    width: 60%;
+  }
+  .headPos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer{
+    display: none;
+  }
+
+  .contactsContainer{
+    display: inline;
+    padding-top: 20px;
+    padding-right: 70px;
+  }
+
+  .card1{
+    width: 70%;
+  }
+
+  .position{
+    height: 8vh;
+  }
+
+  .container div{
+    font-size: 3vh;
+    font-weight: bolder;
+  }
+}
