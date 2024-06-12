@@ -367,3 +367,21 @@ a {
     font-weight: bolder;
   }
 }
+
+@media screen and (max-height: 450px){
+  .backColor{
+    width: 60vh;
+  }
+
+  .intro{
+    font-size: 12vh;
+  }
+
+  .position{
+    height: 10vh;
+  }
+
+  .container div{
+    font-size: large;
+  }
+}

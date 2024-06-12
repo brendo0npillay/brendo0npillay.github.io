@@ -44,3 +44,25 @@
         font-size: 2.5vh;
     }
 }
+
+@media screen and (max-height: 450px){
+    .pPic{
+        width: 12%;
+        height: 50%;
+    }
+
+    .aboutPos p{
+        font-size: small;
+    }
+  }
+
+  @media screen and (max-height: 350px){
+    .pPic{
+        width: 8%;
+        height: 50%;
+    }
+
+    .aboutPos p{
+        font-size: small;
+    }
+  }
