@@ -33,6 +33,10 @@
     background-color: #ceb9f1;
 }
 
+.container div{
+    font-family: "Anton", sans-serif;
+  }
+
 @media screen and (max-width: 399px){
     .aboutPos p{
         font-size: small;
