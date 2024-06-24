@@ -23,14 +23,21 @@ a {
   margin-top: 15px;
   border-radius: 15vh;
   text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 
 .container {
+  z-index: 1;
   position: relative;
-  bottom: 3px;
+  bottom: 9px;
   margin-top: 15px;
-  display: grid;
-  grid-template-columns: 20% 20% 20% 20% 20%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .container div{
@@ -55,6 +62,7 @@ a {
 }
 
 .cardPos {
+  padding-top: 15vh;
   height: 80vh;
   display: flex;
   justify-content: center;
