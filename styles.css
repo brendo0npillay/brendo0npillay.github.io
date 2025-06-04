@@ -44,21 +44,34 @@ a {
   font-family: "Anton", sans-serif;
 }
 
-.intro{
-  text-align: center;
+.intro-wrapper {
   position: absolute;
+  width: 120%;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.intro {
   font-size: 8vh;
   font-family: "Danfo", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-variation-settings:
-    "ELSH" 0;
+  font-variation-settings: "ELSH" 0;
   color: rgb(0, 0, 0);
   -webkit-text-stroke: 2px white;
+  animation: pulse 3s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
 }
 
 .cardPos {
