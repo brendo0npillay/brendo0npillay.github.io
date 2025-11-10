@@ -1,0 +1,86 @@
+.skillsContainer{
+    background-color: #111828;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 4vh;
+}
+
+.skillsContainer h2::after{
+    content: "";
+    display: block;
+    width: 7%;
+    height: 7px;
+    border-radius: 2vh;
+    background: #2862e9;
+    margin: 3vh auto 0;
+}
+
+.catLogo{
+    width: 3vh;
+}
+
+.itemHead{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+
+.itemsContainer{
+    background-color: #202938;
+    padding: 1vh;
+    width: 90%;
+    border-radius: 2vh;
+}
+
+.skillsItems{
+    display: flex;
+    align-items: center;
+    gap: 4vh;
+}
+
+.skillName{
+    display: flex;
+    gap: 3vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.skillName p{
+    background-color: #3b404c;
+    padding: 1vh;
+    border-radius: 2vh;
+}
+
+@media(max-width: 600px){
+    .skillsItems{
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 350px){
+    .itemsContainer{
+        width: 110%;
+    }
+}
+
+@media(min-width: 700px){
+    .skillsContainer{
+        padding-bottom: 20vh;
+    }
+
+    .skillsItems{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .itemsContainer{
+        width: 40%;
+    }
+
+    .skillName{
+        flex-wrap: wrap;
+    }
+}

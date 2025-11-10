@@ -1,0 +1,39 @@
+.contactsContainer{
+    background-color: #111828;
+    padding: 4vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contactsContainer h2::after{
+    content: "";
+    display: block;
+    width: 7%;
+    height: 7px;
+    border-radius: 2vh;
+    background: #2862e9;
+    margin: 3vh auto 0;
+}
+
+.icon{
+    width: 2vh;
+}
+
+@media(min-width: 700px){
+    .contactsContainer h2{
+        font-size: 5vh;
+    }
+
+    .icon{
+        width: 3.5vw;
+    }
+
+    .contacts{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

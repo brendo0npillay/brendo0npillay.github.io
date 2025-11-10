@@ -4,22 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./styles/navBar.css" />
+    <link rel="stylesheet" href="./styles/home.css" />
+    <link rel="stylesheet" href="./styles/about.css" />
+    <link rel="stylesheet" href="./styles/skills.css" />
+    <link rel="stylesheet" href="./styles/projects.css" />
+    <link rel="stylesheet" href="./styles/contact.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
   </head>
   <body>
-    <div class="burgerMenu">
-      <img class="burger" src="./assets/burgerTeal.png" alt="burgerMenu"/>
-      <div class="burgerItems">
-        <a href="#home"><div>Home</div></a>
-        <a href="#about"><div>About</div></a>
-        <a href="#skills"><div>Skills</div></a>
-        <a href="#projects"><div>Projects</div></a>
-        <a href="#contact"><div>Contact</div></a>
-      </div>
-    </div>
-
+    <img class="menuIcon" src="./assets/burgerTeal.png" alt="burgerMenu" />
+    <img class="exitIcon" src="./assets/x-icon-teal.png" alt="exitIcon" />
     <div class="navContainer">
-      <div class="name"><p>Brendon.</p></div>
+      <h2>Brendon.</h2>
       <div class="navItems">
         <a href="#home"><div>Home</div></a>
         <a href="#about"><div>About</div></a>
@@ -30,25 +27,24 @@
     </div>
 
     <div id="home" class="homeContainer">
-      <h1>Hi, I'm <span class="specName">Brendon</span></h1>
+      <h1>Hi, I'm <span class="name">Brendon</span></h1>
       <h2>Full Stack Developer</h2>
       <p>
         I build exceptional digital experiences with modern technologies and
         clean code.
       </p>
-      <br /><br />
-      <div class="homeBtns">
+      <div class="btnContainer">
         <a href="#projects"><button class="viewBtn">View Work</button></a>
         <a href="#contact"><button class="contactBtn">Contact Me</button></a>
       </div>
     </div>
 
     <div id="about" class="aboutContainer">
-      <h1 class="aboutHead">About Me</h1>
-      <div class="aboutInfo">
-        <div><img class="ppic" src="./assets/coding.webp" alt="ppic" /></div>
-        <div>
-          <h3>Who i Am</h3>
+      <h2 data-aos="fade-up">About Me</h2>
+      <div class="aboutItems">
+        <img data-aos="zoom-in" src="./assets/coding.webp" class="ppic" alt="ppic" />
+        <div data-aos="fade-up">
+          <h3>Who I Am</h3>
           <p>
             As an aspiring web developer, I am deeply passionate about crafting
             digital experiences that captivate and engage users. With a focus on
@@ -56,75 +52,75 @@
             HTML, JavaScript, CSS, and a myriad of other technologies.
           </p>
           <div class="checks">
-            <div>
-              <img class="checkmark" src="./assets/check.png" alt="checkmark" />
-              <p>Problem Solver</p>
+            <div class="checkItem">
+              <img src="./assets/check.png" class="checkImg" alt="checkMark" />
+              <p>Problem<br />Solver</p>
             </div>
-            <div>
-              <img class="checkmark" src="./assets/check.png" alt="checkmark" />
-              <p>Clean Coder</p>
+            <div class="checkItem">
+              <img src="./assets/check.png" class="checkImg" alt="checkMark" />
+              <p>Clean<br />Coder</p>
             </div>
-            <div>
-              <img class="checkmark" src="./assets/check.png" alt="checkmark" />
-              <p>Team Player</p>
+            <div class="checkItem">
+              <img src="./assets/check.png" class="checkImg" alt="checkMark" />
+              <p>Team<br />Player</p>
             </div>
-            <div>
-              <img class="checkmark" src="./assets/check.png" alt="checkmark" />
-              <p>Fast Learner</p>
+            <div class="checkItem">
+              <img src="./assets/check.png" class="checkImg" alt="checkMark" />
+              <p>Fast<br />Learner</p>
             </div>
           </div>
-          <br /><br />
+          <br />
           <a
-            target="_blank"
             href="https://www.canva.com/design/DAGmAGD-M3A/QFXN067oLFlDlSzoCXLDxQ/edit?utm_content=DAGmAGD-M3A&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
-            ><button class="cv">View CV</button></a
+            target="_blank"
+            ><button class="cvBtn">View CV</button></a
           >
         </div>
       </div>
     </div>
 
     <div id="skills" class="skillsContainer">
-      <h1>My Skills</h1>
+      <h2 data-aos="fade-up">My Skills</h2>
       <p>Technologies I've worked with over the years</p>
-      <div class="data">
-        <div class="skills">
-          <div class="skillTitle">
-            <img class="skillIcon" src="./assets/front.png" alt="icon" />
-            <h2>Frontend</h2>
+      <div class="skillsItems">
+        <div data-aos="fade-right" class="itemsContainer">
+          <div class="itemHead">
+            <img src="./assets/front.png" class="catLogo" alt="catLogo" />
+            <h3>Frontend</h3>
           </div>
-          <div class="skillsList">
+          <div class="skillName">
             <p>CSS</p>
             <p>HTML</p>
             <p>JavaScript</p>
             <p>React</p>
           </div>
         </div>
-        <div class="skills">
-          <div class="skillTitle">
-            <img class="skillIcon" src="./assets/back.png" alt="icon" />
-            <h2>Backend</h2>
+        <div data-aos="fade-left" class="itemsContainer">
+          <div class="itemHead">
+            <img src="./assets/back.png" class="catLogo" alt="catLogo" />
+            <h3>Backend</h3>
           </div>
-          <div class="skillsList">
+          <div class="skillName">
             <p>NodeJS</p>
             <p>Express</p>
           </div>
         </div>
-        <div class="skills">
-          <div class="skillTitle">
-            <img class="skillIcon" src="./assets/database.png" alt="icon" />
-            <h2>Database</h2>
+        <div data-aos="fade-right" class="itemsContainer">
+          <div class="itemHead">
+            <img src="./assets/database.png" class="catLogo" alt="catLogo" />
+            <h3>Database</h3>
           </div>
-          <div class="skillsList">
-            <p>PostgreSQL</p>
+          <div class="skillName">
+            <p>Postgres</p>
             <p>MongoDB</p>
           </div>
         </div>
-        <div class="skills">
-          <div class="skillTitle">
-            <img class="skillIcon" src="./assets/tools.png" alt="icon" />
-            <h2>Tools & Others</h2>
+        <div data-aos="fade-left" class="itemsContainer">
+          <div class="itemHead">
+            <img src="./assets/tools.png" class="catLogo" alt="catLogo" />
+            <h3>Tools & Others</h3>
           </div>
-          <div class="skillsList">
+          <div class="skillName">
             <p>Git</p>
             <p>Docker</p>
             <p>Figma</p>
@@ -135,104 +131,128 @@
     </div>
 
     <div id="projects" class="projectsContainer">
-      <h1>My Projects</h1>
+      <h2 data-aos="fade-up">My Projects</h2>
       <p>Some of my recent work</p>
-      <div class="projectsList">
-        <div class="card">
-          <img class="projImg" src="./assets/planets.webp" alt="projImg" />
-          <div class="cardTitle">
+      <div class="projects">
+        <div data-aos="fade-left" class="projCard">
+          <img src="./assets/planets.webp" class="thumbnail" alt="thumb" />
+          <div class="cardHead">
             <h3>3D Planet Viewer</h3>
-            <div class="linkIconsContainer">
-              <a target="_blank" href="https://github.com/brendo0npillay/planet-view"><img
-                class="linkIcons"
-                src="./assets/githubWhite.png"
-                alt="git"
-              /></a>
-              <a target="_blank" href="https://planet-view.onrender.com/"><img
-                class="linkIcons"
-                src="./assets/linkWhite.png"
-                alt="navigate"
+            <div class="links">
+              <a
+                href="https://github.com/brendo0npillay/planet-view"
+                target="_blank"
+                ><img
+                  src="./assets/githubWhite.png"
+                  class="cardImg"
+                  alt="git" /></a
+              ><a href="https://planet-view.onrender.com/" target="_blank"
+                ><img src="./assets/linkWhite.png" class="cardImg" alt="git"
               /></a>
             </div>
           </div>
-          <p>A dynamic 3D planet viewer built with Three.js and powered by Vite. It features realistic planet models, smooth camera transitions, and interactive controls, all wrapped in a sleek, transparent UI that offers an immersive space-themed experience.</p>
-          <div class="techs"></div>
+          <p>
+            A dynamic 3D planet viewer built with Three.js and powered by Vite.
+            It features realistic planet models, smooth camera transitions, and
+            interactive controls, all wrapped in a sleek, transparent UI that
+            offers an immersive space-themed experience.
+          </p>
         </div>
-        <div class="card">
-          <img class="projImg" src="./assets/memoryRec.jpg" alt="projImg" />
-          <div class="cardTitle">
+        <div data-aos="fade-right" class="projCard">
+          <img src="./assets/memoryRec.jpg" class="thumbnail" alt="thumb" />
+          <div class="cardHead">
             <h3>Memory Game</h3>
-            <div class="linkIconsContainer">
-              <a target="_blank" href="https://github.com/brendo0npillay/memory-game"><img
-                class="linkIcons"
-                src="./assets/githubWhite.png"
-                alt="git"
-              /></a>
-              <a target="_blank" href="https://memory-game-xfw0.onrender.com/"><img
-                class="linkIcons"
-                src="./assets/linkWhite.png"
-                alt="navigate"
+            <div class="links">
+              <a
+                href="https://github.com/brendo0npillay/memory-game"
+                target="_blank"
+                ><img
+                  src="./assets/githubWhite.png"
+                  class="cardImg"
+                  alt="git" /></a
+              ><a href="https://memory-game-xfw0.onrender.com/" target="_blank"
+                ><img src="./assets/linkWhite.png" class="cardImg" alt="git"
               /></a>
             </div>
           </div>
-          <p>An interactive memory game built with HTML, CSS, and JavaScript, bundled with Webpack for performance and modular code. Players match card pairs using visual memory, with smooth animations and responsive design for all devices.</p>
-          <div class="techs"></div>
+          <p>
+            An interactive memory game built with HTML, CSS, and JavaScript,
+            bundled with Webpack for performance and modular code. Players match
+            card pairs using visual memory, with smooth animations and
+            responsive design for all devices.
+          </p>
         </div>
-        <div class="card">
-          <img class="projImg" src="./assets/weatherRec.avif" alt="projImg" />
-          <div class="cardTitle">
+        <div data-aos="fade-left" class="projCard">
+          <img src="./assets/weatherRec.avif" class="thumbnail" alt="thumb" />
+          <div class="cardHead">
             <h3>Weather Viewer</h3>
-            <div class="linkIconsContainer">
-              <a target="_blank" href="https://github.com/brendo0npillay/weatherapp"><img
-                class="linkIcons"
-                src="./assets/githubWhite.png"
-                alt="git"
-              /></a>
-              <a target="_blank" href="https://weatherapp-4hr3.onrender.com/"><img
-                class="linkIcons"
-                src="./assets/linkWhite.png"
-                alt="navigate"
+            <div class="links">
+              <a
+                href="https://github.com/brendo0npillay/weatherapp"
+                target="_blank"
+                ><img
+                  src="./assets/githubWhite.png"
+                  class="cardImg"
+                  alt="git" /></a
+              ><a href="https://weatherapp-4hr3.onrender.com/" target="_blank"
+                ><img src="./assets/linkWhite.png" class="cardImg" alt="git"
               /></a>
             </div>
           </div>
-          <p>A lightweight, responsive weather app built with HTML, CSS, and JavaScript. It fetches real-time data from a weather API, letting users search any city and view current conditions with a clean, user-friendly interface.</p>
-          <div class="techs"></div>
+          <p>
+            A lightweight, responsive weather app built with HTML, CSS, and
+            JavaScript. It fetches real-time data from a weather API, letting
+            users search any city and view current conditions with a clean,
+            user-friendly interface.
+          </p>
         </div>
-      </div><br><br>
-      <a target="_blank" href="https://projects-storage.onrender.com/"><button class="projBtn">View All Projects</button></a>
+      </div>
+      <br />
+      <a href="https://projects-storage.onrender.com/" target="_blank"
+        ><button class="projBtn">View All Projects</button></a
+      >
     </div>
 
     <div id="contact" class="contactsContainer">
-      <h1>Get In Touch</h1>
+      <h2 data-aos="fade-up">Get In Touch</h2>
       <p>
         Have a project in mind or want to discuss potential opportunities? Feel
         free to reach out!
       </p>
-      <div class="contactInfo">
-        <h2>Contact Information</h2>
-        <div class="contactDetails">
-          <img class="contactLogo" src="./assets/email-13762.png" alt="logo" />
-          <div class="details">
-            <h4>Email</h4>
+      <h3>Contact Information</h3>
+      <div data-aos="fade-left" class="contacts">
+        <div class="info">
+          <img src="./assets/email-13762.png" class="icon" alt="icon" />
+          <div class="contDetails">
+            <p>Email</p>
             <p>brendonpillay03@gmail.com</p>
           </div>
-        </div><br>
-        <div class="contactDetails">
-          <img class="contactLogo" src="./assets/whatsapp-logo-png-2290.png" alt="logo" />
-          <div class="details">
-            <h4>Phone</h4>
+        </div>
+        <div class="info">
+          <img
+            src="./assets/whatsapp-logo-png-2290.png"
+            class="icon"
+            alt="icon"
+          />
+          <div class="contDetails">
+            <p>Phone</p>
             <p>+27 71 347 2385</p>
           </div>
-        </div><br>
-        <div class="contactDetails">
-          <img class="contactLogo" src="./assets/512x512-logo-27173.png" alt="logo" />
-          <div class="details">
-            <h4>Location</h4>
+        </div>
+        <div class="info">
+          <img src="./assets/512x512-logo-27173.png" class="icon" alt="icon" />
+          <div class="contDetails">
+            <p>Location</p>
             <p>Johannesburg, SA</p>
           </div>
         </div>
       </div>
     </div>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
-  <script src="script.js"></script>
 </html>

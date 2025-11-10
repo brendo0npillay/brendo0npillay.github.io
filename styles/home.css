@@ -1,0 +1,52 @@
+.homeContainer{
+    padding-top: 5vh;
+    text-align: center;
+    padding-bottom: 4vh;
+    background-color: #111828;
+    color: white;
+}
+
+.homeContainer p{
+    color: #8894a4;
+}
+
+.homeContainer h2{
+    color: #8894a4;
+}
+
+.viewBtn{
+    border-radius: 2vh;
+    padding: 2vh;
+    background-color: #2862e9;
+    color: white;
+    border: 1px solid #2862e9;
+    cursor: pointer;
+}
+
+.contactBtn{
+    border-radius: 2vh;
+    padding: 2vh;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+@media(min-width: 700px){
+    .homeContainer{
+        padding-top: 10vh;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 1rem;
+    }
+
+    .homeContainer h1{
+        font-size: 10vh;
+    }
+
+    .homeContainer h2{
+        font-size: 5vh;
+    }
+}

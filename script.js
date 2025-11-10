@@ -1,8 +1,22 @@
-const burgerMenu = document.querySelector(".burger")
-const burgerItems = document.querySelector(".burgerItems")
-let shown = false
+//html elements
+const menu = document.querySelector(".menuIcon")
+const menuItems = document.querySelector(".navContainer")
+const exit = document.querySelector(".exitIcon")
 
-burgerMenu.onclick = () => {
-    shown ? burgerItems.style.display = "none" : burgerItems.style.display = "flex"  
-    shown = !shown
+//variables
+let clicked = false
+
+//menu icon click event
+menu.onclick = () => {
+    menuItems.style.display = "inline"
+    exit.style.display = "inline"
+    menu.style.display = "none"
+
+}
+
+//exit icon click event
+exit.onclick = () => {
+    menuItems.style.display = "none"
+    exit.style.display = "none"
+    menu.style.display = "inline"
 }
