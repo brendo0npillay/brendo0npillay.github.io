@@ -38,6 +38,7 @@
     border: 1px solid #2862e9;
     color: #2862e9;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .cvBtn:hover{

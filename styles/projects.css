@@ -29,6 +29,7 @@
     color: #2862e9;
     border: 1px solid #2862e9;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .projBtn:hover{

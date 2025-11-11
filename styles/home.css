@@ -21,6 +21,7 @@
     color: white;
     border: 1px solid #2862e9;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .contactBtn{
@@ -30,6 +31,7 @@
     color: white;
     border: 1px solid white;
     cursor: pointer;
+    text-decoration: none;
 }
 
 @media(min-width: 700px){
