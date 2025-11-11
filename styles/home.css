@@ -6,6 +6,12 @@
     color: white;
 }
 
+.homeContainer .name{
+    background: linear-gradient(to right, #00b1dd, #e52e71);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .homeContainer p{
     color: #8894a4;
 }
