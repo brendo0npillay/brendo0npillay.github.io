@@ -10,13 +10,13 @@ body{
 }
 
 .exitIcon{
-    width: 6vh;
+    width: 4vh;
     cursor: pointer;
     position: fixed;
     display: none;
-    right: 0;
+    left: 0;
     padding: 5px;
-    z-index: 1;
+    z-index: 2;
 }
 
 .navContainer{
@@ -46,6 +46,13 @@ body{
 
     .navContainer{
         display: none;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .navItems a{
+        text-decoration: none;
+        color: white;
     }
 }
 
