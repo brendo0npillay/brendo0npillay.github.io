@@ -32,6 +32,7 @@ body{
 .navContainer h2{
     font-size: 4vh;
     background: linear-gradient(to right, #00b1dd, #e52e71);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
