@@ -1,39 +1,117 @@
-.contactsContainer{
-    background-color: #111828;
-    padding: 4vh;
-    color: white;
+.contactContainer{
+    margin-top: 15vh;
+    margin-bottom: 15vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactContainer h2{
+    font-size: 6vh;
+    padding: 2vh;
+    display: inline-block;
+    position: relative;
     text-align: center;
 }
 
-.contactsContainer h2::after{
+.contactContainer h2::after{
     content: "";
-    display: block;
-    width: 7%;
+    position: absolute;
+    width: 50%;
     height: 7px;
     border-radius: 2vh;
-    background: #2862e9;
-    margin: 3vh auto 0;
+    background: #2863ea;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -8px;
 }
 
-.icon{
-    width: 2vh;
+.infoContainer{
+    display: flex;
+    gap: 10vw;
+    padding: 10vh;
 }
 
-@media(min-width: 700px){
-    .contactsContainer h2{
-        font-size: 5vh;
+#contactForm{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+#contactForm input{
+    height: 6vh;
+    border-radius: 2vh;
+    border: 1px solid black;
+}
+
+#contactForm textarea{
+    height: 15vh;
+    border-radius: 2vh;
+    border: 1px solid black;
+}
+
+#contactForm button{
+    width: 30%;
+    height: 7vh;
+    border-radius: 4vh;
+    border: 1px solid #2863ea;
+    background-color: #2863ea;
+    color: white;
+    cursor: pointer;
+}
+
+.gmailIcon{
+    width: 8vh;
+}
+
+.phoneIcon{
+    width: 8vh;
+}
+
+.rawDetails{
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+
+footer{
+    padding: 4vh;
+    background-color: #2e303c;
+    color: white;
+}
+
+.contactTxt{
+    font-size: 2vh;
+    color: #2863ea;
+}
+
+@media (max-width: 600px){
+    .contactTxt{
+        text-align: center;
     }
 
-    .icon{
-        width: 3.5vw;
-    }
-
-    .contacts{
-        display: flex;
+    .infoContainer{
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
+    }
+
+    .name{
+        display: flex;
+        gap: 1vw;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1000px){
+    .contactTxt{
+        text-align: center;
+    }
+
+    .infoContainer{
+        flex-direction: column;
     }
 }

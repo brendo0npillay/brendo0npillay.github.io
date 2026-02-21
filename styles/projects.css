@@ -1,66 +1,70 @@
 .projectsContainer{
-    background-color: #202938;
-    padding: 4vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    color: white;
+}
+
+.projectsContainer h2{
+    font-size: 6vh;
+    padding: 2vh;
+    display: inline-block;
+    position: relative;
+    text-align: center;
 }
 
 .projectsContainer h2::after{
     content: "";
-    display: block;
+    position: absolute;
     width: 50%;
     height: 7px;
     border-radius: 2vh;
-    background: #2862e9;
-    margin: 3vh auto 0;
+    background: #2863ea;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -8px;
 }
 
 .projects{
     display: flex;
-    gap: 4vh;
+    gap: 4vw;
+    padding: 10vh;
 }
 
-.projBtn{
-    padding: 2vh;
+.projectCard{
+    flex: 1;
+    max-width: 40%;
     border-radius: 2vh;
-    background-color: transparent;
-    color: #2862e9;
-    border: 1px solid #2862e9;
+    padding: 3vh;
+    background: linear-gradient(
+        145deg,
+        #dfe5ea,
+        #ffffff
+    );
+    box-shadow:
+      -6px -6px 12px #ffffff,
+       6px  6px 12px #cfd6dc;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+}
+
+.projectCard:hover{
+        box-shadow:
+      -2px -2px 5px #ffffff,
+       2px  2px 5px #cfd6dc;
+}
+
+.projImg{
+    width: 20vw;
+    border-top-left-radius: 2vh;
+    border-top-right-radius: 2vh;
+    filter: brightness(70%);
+}
+
+.cardLink{
+    width: 4vh;
     cursor: pointer;
-    text-decoration: none;
-}
-
-.projBtn:hover{
-    color: white;
-    background-color: #2862e9;
-}
-
-.projCard{
-    background-color: #111828;
-    border-radius: 2vh;
-}
-
-.projCard p{
-    padding: 2vh;
-}
-
-.thumbnail{
-    width: 100%;
-    border-radius: 2vh;
-}
-
-.cardHead{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 1vh;
-    padding-right: 1vh;
-}
-
-.cardImg{
-    width: 3vh;
 }
 
 .links{
@@ -68,14 +72,60 @@
     gap: 2vw;
 }
 
-@media(max-width: 600px){
+.allBtn{
+    width: 10vw;
+    height: 7vh;
+    font-size: large;
+    font-weight: bold;
+    background: transparent;
+    border: 2px solid #2863ea;
+    border-radius: 2vh;
+    color: #2863ea;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.allBtn:hover{
+    background-color: #2863ea;
+    color: white;
+}
+
+@media (max-width: 600px){
     .projects{
         flex-direction: column;
+        align-items: center;
+        padding: 2vh;
+    }
+
+    .projectCard{
+        max-width: 90%;
+    }
+
+    .projImg{
+        width: 90%;
+    }
+
+    .allBtn{
+        width: 30vw;
     }
 }
 
-@media(min-width: 700px){
-    .projCard{
-        width: 28vw;
+@media (min-width: 601px) and (max-width: 1000px){
+    .projects{
+        flex-direction: column;
+        align-items: center;
+        padding: 2vh;
+    }
+
+    .projectCard{
+        max-width: 100%;
+    }
+
+    .projImg{
+        width: 70%;
+    }
+
+    .allBtn{
+        width: 30vw;
     }
 }
