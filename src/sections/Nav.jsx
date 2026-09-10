@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import CVModal from '../components/cvModal.jsx';
+import CVModal from '../components/CVModal.jsx';
 
 const LINKS = [
   { href: '#about', label: 'About' },
