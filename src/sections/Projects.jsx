@@ -1,5 +1,5 @@
 import CurvedLoop from '../components/CurvedLoop.jsx';
-import RotatingCards from '../components/Rotatingcards.jsx';
+import RotatingCards from '../components/RotatingCards.jsx';
 
 const PROJECT_ITEMS = [
   {
