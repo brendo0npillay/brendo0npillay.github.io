@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Share+Tech+Mono&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  background: #0b0710;
+  color: #f1edfa;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Share Tech Mono', monospace;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+.font-techno {
+  font-family: 'Orbitron', sans-serif;
+}
+
+::selection {
+  background: #d7ff00;
+  color: #0b0710;
+}
+
+/* thin lime scrollbar to reinforce the digital-readout feel */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0b0710;
+}
+::-webkit-scrollbar-thumb {
+  background: #6d28d9;
+  border: 2px solid #0b0710;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+.section-pad {
+  padding-left: clamp(1.25rem, 6vw, 6rem);
+  padding-right: clamp(1.25rem, 6vw, 6rem);
+}

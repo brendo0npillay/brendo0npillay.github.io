@@ -1,0 +1,119 @@
+.rotating-cards-stage {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  perspective: 1400px;
+  touch-action: pan-y;
+}
+
+.rotating-cards-ring {
+  position: relative;
+  width: 260px;
+  height: 340px;
+  transform-style: preserve-3d;
+  cursor: grab;
+}
+
+.rotating-cards-ring:active {
+  cursor: grabbing;
+}
+
+.rotating-card {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+}
+
+.rotating-card__inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #150c22;
+  border: 1px solid rgba(109, 40, 217, 0.6);
+  overflow: hidden;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  user-select: none;
+}
+
+.rotating-card.is-active .rotating-card__inner {
+  border-color: #d7ff00;
+  box-shadow: 0 0 40px rgba(215, 255, 0, 0.2);
+}
+
+.rotating-card__inner img {
+  width: 100%;
+  height: 55%;
+  object-fit: cover;
+  display: block;
+  pointer-events: none;
+}
+
+.rotating-card__body {
+  padding: 1.1rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.rotating-card__body h3 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1rem;
+  color: #f1edfa;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.rotating-card__body p {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.8rem;
+  color: #c9c3d8;
+  line-height: 1.4;
+}
+
+.rotating-card__link {
+  margin-top: auto;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.75rem;
+  color: #d7ff00;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+}
+
+.rotating-card__link:hover {
+  text-decoration: underline;
+}
+
+.rotating-cards-dots {
+  display: flex;
+  gap: 0.6rem;
+  margin-top: 2.5rem;
+}
+
+.rotating-cards-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1px solid rgba(215, 255, 0, 0.5);
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.rotating-cards-dot.is-active {
+  background: #d7ff00;
+  transform: scale(1.3);
+}
+
+@media (min-width: 640px) {
+  .rotating-cards-ring {
+    width: 300px;
+    height: 380px;
+  }
+}
