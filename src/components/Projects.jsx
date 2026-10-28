@@ -70,7 +70,7 @@ export default function Projects() {
       </div>
 
       <Reveal delay={200} className="mt-20 flex justify-center">
-        <a href="#" className="rounded-full border-2 border-white px-12 py-4 text-sm font-medium tracking-wide transition-colors hover:bg-white hover:text-black">
+        <a href="https://projects-storage.onrender.com/" target='_blank' className="rounded-full border-2 border-white px-12 py-4 text-sm font-medium tracking-wide transition-colors hover:bg-white hover:text-black">
           VIEW ALL
         </a>
       </Reveal>
