@@ -4,11 +4,11 @@ import { ChatThumb, PlanetThumb, FootprintThumb } from './Thumbnails'
 
 const projects = [
   {
-    title: 'Ai Chatbot',
-    text: 'Browser chatbot with real-time responses and smooth message rendering.',
-    tags: ['Vue3.3', 'JavaScript', 'Html', 'Css'],
+    title: '3D Poser',
+    text: 'An interactive 3D character poser. Real-time bone manipulation with precision rotation controls.',
+    tags: ['React', 'Threejs', 'Tailwind', 'Vite'],
     Thumb: ChatThumb,
-    href: 'https://github.com/brendo0npillay/new-chatbot',
+    href: 'https://poser-w1i0.onrender.com/',
   },
   {
     title: '3D planet view',
